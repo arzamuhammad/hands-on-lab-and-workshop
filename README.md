@@ -8,10 +8,6 @@ real, automated data pipeline and a live dashboard.
 
 ```
 hands-on-lab-and-workshop/
-├── slides/                     # 2-hour theory session (vendor-neutral concepts)
-│   ├── Intro_to_Data_Platforms.pptx
-│   ├── deck_outline.yaml        # source outline for the deck
-│   └── speaker-notes.md         # talking points for every slide
 └── hands-on-lab/               # 2-hour hands-on lab (uses Snowflake free trial)
     ├── README.md                # detailed lab guide (start here)
     ├── hol.md                   # full facilitator script
@@ -24,12 +20,13 @@ hands-on-lab-and-workshop/
     └── seed_insert.sql          # no-S3 fallback loader
 ```
 
-## The two sessions
+## The hands-on lab
 
 | Session | Duration | Focus |
 |---------|----------|-------|
-| **Theory** (`slides/`) | 2 hours | Databases, OLTP vs OLAP, on-prem vs cloud, data careers, intro to SQL |
 | **Hands-on lab** (`hands-on-lab/`) | 2 hours | Sign up → load data → SQL → build a pipeline → deploy a dashboard |
+
+> The 2-hour theory session (slides + speaker notes) is maintained separately and is not part of this repository.
 
 ## Quick start
 
@@ -43,5 +40,4 @@ Students role-play three jobs using a fictional Indonesian retailer, **Nusantara
 **Data Analyst → Data Engineer → BI Developer**.
 
 ---
-*Educational material. The theory deck is intentionally vendor-neutral; the lab uses Snowflake as
-the practice platform.*
+*Educational material. The hands-on lab uses Snowflake as the practice platform.*
