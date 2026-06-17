@@ -1,0 +1,501 @@
+customer_id,full_name,email,city,province,segment,signup_date
+1001,Indah Nugroho,indah.nugroho1001@email.com,Jakarta,DKI Jakarta,Member,2023-09-08
+1002,Rina Lestari,rina.lestari1002@email.com,Palembang,Sumatera Selatan,Regular,2024-07-12
+1003,Andi Utami,andi.utami1003@email.com,Semarang,Jawa Tengah,Regular,2023-04-06
+1004,Agus Kurniawan,agus.kurniawan1004@email.com,Malang,Jawa Timur,Member,2024-07-28
+1005,Agus Setiawan,agus.setiawan1005@email.com,Semarang,Jawa Tengah,Regular,2024-08-26
+1006,Joko Santoso,joko.santoso1006@email.com,Makassar,Sulawesi Selatan,Member,2024-12-15
+1007,Bayu Halim,bayu.halim1007@email.com,Bekasi,Jawa Barat,Regular,2023-12-11
+1008,Dewi Pratama,dewi.pratama1008@email.com,Semarang,Jawa Tengah,Regular,2023-12-19
+1009,Yusuf Permata,yusuf.permata1009@email.com,Makassar,Sulawesi Selatan,Regular,2024-04-15
+1010,Fajar Nugroho,fajar.nugroho1010@email.com,Balikpapan,Kalimantan Timur,Regular,2024-07-19
+1011,Maya Firmansyah,maya.firmansyah1011@email.com,Balikpapan,Kalimantan Timur,Member,2024-08-14
+1012,Agus Pratama,agus.pratama1012@email.com,Jakarta,DKI Jakarta,Member,2023-10-24
+1013,Andi Kurniawan,andi.kurniawan1013@email.com,Denpasar,Bali,Regular,2023-10-12
+1014,Nina Maulana,nina.maulana1014@email.com,Depok,Jawa Barat,Regular,2023-08-03
+1015,Rudi Permata,rudi.permata1015@email.com,Palembang,Sumatera Selatan,VIP,2024-10-25
+1016,Andi Firmansyah,andi.firmansyah1016@email.com,Medan,Sumatera Utara,Regular,2023-09-08
+1017,Putri Hartono,putri.hartono1017@email.com,Semarang,Jawa Tengah,Regular,2024-10-17
+1018,Ayu Setiawan,ayu.setiawan1018@email.com,Tangerang,Banten,Member,2023-02-27
+1019,Rina Wijaya,rina.wijaya1019@email.com,Makassar,Sulawesi Selatan,Regular,2023-10-02
+1020,Andi Hidayat,andi.hidayat1020@email.com,Balikpapan,Kalimantan Timur,VIP,2023-11-19
+1021,Agus Putra,agus.putra1021@email.com,Semarang,Jawa Tengah,Member,2024-10-20
+1022,Nina Lestari,nina.lestari1022@email.com,Bekasi,Jawa Barat,Regular,2024-07-28
+1023,Fajar Permata,fajar.permata1023@email.com,Palembang,Sumatera Selatan,Regular,2024-08-20
+1024,Dian Maulana,dian.maulana1024@email.com,Tangerang,Banten,VIP,2023-05-22
+1025,Wati Putra,wati.putra1025@email.com,Bogor,Jawa Barat,Member,2023-04-23
+1026,Rizki Saputra,rizki.saputra1026@email.com,Makassar,Sulawesi Selatan,Member,2024-09-02
+1027,Andi Anggraini,andi.anggraini1027@email.com,Semarang,Jawa Tengah,Regular,2024-04-24
+1028,Wati Permata,wati.permata1028@email.com,Malang,Jawa Timur,Member,2023-01-12
+1029,Rudi Nugroho,rudi.nugroho1029@email.com,Medan,Sumatera Utara,Member,2023-10-01
+1030,Citra Halim,citra.halim1030@email.com,Bogor,Jawa Barat,Regular,2023-06-11
+1031,Nina Santoso,nina.santoso1031@email.com,Palembang,Sumatera Selatan,Member,2023-09-27
+1032,Wati Saputra,wati.saputra1032@email.com,Malang,Jawa Timur,VIP,2024-10-02
+1033,Maya Ramadhan,maya.ramadhan1033@email.com,Yogyakarta,DI Yogyakarta,Regular,2024-01-18
+1034,Citra Saputra,citra.saputra1034@email.com,Malang,Jawa Timur,VIP,2024-06-27
+1035,Intan Santoso,intan.santoso1035@email.com,Yogyakarta,DI Yogyakarta,Regular,2023-01-20
+1036,Dewi Maulana,dewi.maulana1036@email.com,Balikpapan,Kalimantan Timur,VIP,2023-11-11
+1037,Rina Wijaya,rina.wijaya1037@email.com,Tangerang,Banten,Member,2023-03-22
+1038,Andi Putra,andi.putra1038@email.com,Denpasar,Bali,Regular,2024-06-29
+1039,Citra Lestari,citra.lestari1039@email.com,Depok,Jawa Barat,Member,2024-07-16
+1040,Putri Permata,putri.permata1040@email.com,Malang,Jawa Timur,Member,2024-03-09
+1041,Agus Setiawan,agus.setiawan1041@email.com,Makassar,Sulawesi Selatan,Member,2023-07-25
+1042,Ayu Wibowo,ayu.wibowo1042@email.com,Semarang,Jawa Tengah,VIP,2024-10-27
+1043,Sari Hartono,sari.hartono1043@email.com,Balikpapan,Kalimantan Timur,Regular,2023-05-04
+1044,Rina Kurniawan,rina.kurniawan1044@email.com,Bogor,Jawa Barat,Regular,2024-08-25
+1045,Fajar Kurniawan,fajar.kurniawan1045@email.com,Yogyakarta,DI Yogyakarta,Regular,2023-03-14
+1046,Ayu Wijaya,ayu.wijaya1046@email.com,Tangerang,Banten,Regular,2023-02-02
+1047,Gita Halim,gita.halim1047@email.com,Bogor,Jawa Barat,Regular,2023-10-13
+1048,Rudi Putra,rudi.putra1048@email.com,Tangerang,Banten,Regular,2024-08-07
+1049,Lestari Putra,lestari.putra1049@email.com,Tangerang,Banten,Member,2024-02-21
+1050,Agus Nugroho,agus.nugroho1050@email.com,Bogor,Jawa Barat,Member,2023-12-29
+1051,Bayu Susanto,bayu.susanto1051@email.com,Surabaya,Jawa Timur,Member,2023-02-25
+1052,Rudi Nugroho,rudi.nugroho1052@email.com,Jakarta,DKI Jakarta,Regular,2023-12-14
+1053,Doni Nugroho,doni.nugroho1053@email.com,Tangerang,Banten,Regular,2024-07-03
+1054,Nina Lestari,nina.lestari1054@email.com,Semarang,Jawa Tengah,Regular,2024-04-18
+1055,Rina Pratama,rina.pratama1055@email.com,Surabaya,Jawa Timur,Member,2024-07-17
+1056,Dewi Wijaya,dewi.wijaya1056@email.com,Medan,Sumatera Utara,VIP,2023-01-16
+1057,Andi Kurniawan,andi.kurniawan1057@email.com,Depok,Jawa Barat,Regular,2024-05-07
+1058,Agus Anggraini,agus.anggraini1058@email.com,Balikpapan,Kalimantan Timur,Regular,2024-01-24
+1059,Budi Anggraini,budi.anggraini1059@email.com,Bekasi,Jawa Barat,VIP,2024-04-10
+1060,Maya Susanto,maya.susanto1060@email.com,Palembang,Sumatera Selatan,VIP,2024-07-23
+1061,Rudi Putra,rudi.putra1061@email.com,Depok,Jawa Barat,Regular,2023-08-11
+1062,Siti Utami,siti.utami1062@email.com,Palembang,Sumatera Selatan,Regular,2023-11-18
+1063,Siti Wijaya,siti.wijaya1063@email.com,Yogyakarta,DI Yogyakarta,Regular,2024-06-27
+1064,Putri Wijaya,putri.wijaya1064@email.com,Malang,Jawa Timur,Regular,2023-07-10
+1065,Andi Firmansyah,andi.firmansyah1065@email.com,Bogor,Jawa Barat,Member,2023-08-29
+1066,Dian Nugroho,dian.nugroho1066@email.com,Balikpapan,Kalimantan Timur,Regular,2024-08-15
+1067,Yusuf Wijaya,yusuf.wijaya1067@email.com,Yogyakarta,DI Yogyakarta,Regular,2024-11-04
+1068,Lestari Utami,lestari.utami1068@email.com,Malang,Jawa Timur,Regular,2023-09-25
+1069,Agus Halim,agus.halim1069@email.com,Tangerang,Banten,Regular,2023-05-15
+1070,Rudi Wibowo,rudi.wibowo1070@email.com,Surabaya,Jawa Timur,Regular,2023-03-16
+1071,Budi Hartono,budi.hartono1071@email.com,Yogyakarta,DI Yogyakarta,VIP,2023-04-13
+1072,Andi Setiawan,andi.setiawan1072@email.com,Tangerang,Banten,Regular,2023-05-16
+1073,Intan Maulana,intan.maulana1073@email.com,Balikpapan,Kalimantan Timur,Regular,2023-09-08
+1074,Sari Wibowo,sari.wibowo1074@email.com,Depok,Jawa Barat,Regular,2024-07-10
+1075,Ayu Wibowo,ayu.wibowo1075@email.com,Yogyakarta,DI Yogyakarta,VIP,2024-10-31
+1076,Wati Santoso,wati.santoso1076@email.com,Medan,Sumatera Utara,Member,2023-11-03
+1077,Intan Nugroho,intan.nugroho1077@email.com,Balikpapan,Kalimantan Timur,Regular,2023-04-29
+1078,Hendra Nugroho,hendra.nugroho1078@email.com,Palembang,Sumatera Selatan,Regular,2023-10-06
+1079,Maya Firmansyah,maya.firmansyah1079@email.com,Tangerang,Banten,Member,2023-07-28
+1080,Rudi Permata,rudi.permata1080@email.com,Malang,Jawa Timur,Regular,2023-02-22
+1081,Andi Susanto,andi.susanto1081@email.com,Denpasar,Bali,Regular,2023-01-04
+1082,Eko Lestari,eko.lestari1082@email.com,Medan,Sumatera Utara,VIP,2023-06-15
+1083,Bambang Hartono,bambang.hartono1083@email.com,Malang,Jawa Timur,Member,2024-07-28
+1084,Budi Nugroho,budi.nugroho1084@email.com,Bogor,Jawa Barat,VIP,2024-12-08
+1085,Hendra Lestari,hendra.lestari1085@email.com,Malang,Jawa Timur,Regular,2024-01-14
+1086,Lestari Setiawan,lestari.setiawan1086@email.com,Depok,Jawa Barat,Regular,2023-02-12
+1087,Maya Maulana,maya.maulana1087@email.com,Balikpapan,Kalimantan Timur,VIP,2023-02-10
+1088,Hendra Maulana,hendra.maulana1088@email.com,Tangerang,Banten,Member,2024-11-13
+1089,Dewi Maulana,dewi.maulana1089@email.com,Makassar,Sulawesi Selatan,Regular,2024-02-21
+1090,Yusuf Lestari,yusuf.lestari1090@email.com,Balikpapan,Kalimantan Timur,VIP,2023-06-16
+1091,Doni Saputra,doni.saputra1091@email.com,Balikpapan,Kalimantan Timur,Regular,2023-07-03
+1092,Bambang Halim,bambang.halim1092@email.com,Makassar,Sulawesi Selatan,VIP,2024-11-16
+1093,Gita Kurniawan,gita.kurniawan1093@email.com,Bekasi,Jawa Barat,Regular,2024-12-19
+1094,Dewi Anggraini,dewi.anggraini1094@email.com,Denpasar,Bali,Regular,2024-04-26
+1095,Rina Hidayat,rina.hidayat1095@email.com,Denpasar,Bali,VIP,2023-12-25
+1096,Maya Kurniawan,maya.kurniawan1096@email.com,Tangerang,Banten,Regular,2023-07-17
+1097,Dian Halim,dian.halim1097@email.com,Bekasi,Jawa Barat,Member,2023-10-13
+1098,Sari Ramadhan,sari.ramadhan1098@email.com,Semarang,Jawa Tengah,Member,2024-07-03
+1099,Eko Santoso,eko.santoso1099@email.com,Bogor,Jawa Barat,Member,2023-09-25
+1100,Putri Utami,putri.utami1100@email.com,Bekasi,Jawa Barat,Regular,2024-09-02
+1101,Bayu Maulana,bayu.maulana1101@email.com,Palembang,Sumatera Selatan,Member,2024-03-22
+1102,Yusuf Ramadhan,yusuf.ramadhan1102@email.com,Bogor,Jawa Barat,Regular,2024-08-13
+1103,Agus Permata,agus.permata1103@email.com,Jakarta,DKI Jakarta,Member,2023-01-02
+1104,Wati Setiawan,wati.setiawan1104@email.com,Medan,Sumatera Utara,Member,2024-11-17
+1105,Agus Maulana,agus.maulana1105@email.com,Semarang,Jawa Tengah,Regular,2024-11-11
+1106,Intan Halim,intan.halim1106@email.com,Yogyakarta,DI Yogyakarta,Regular,2023-05-08
+1107,Bambang Wibowo,bambang.wibowo1107@email.com,Malang,Jawa Timur,Regular,2024-02-23
+1108,Eko Anggraini,eko.anggraini1108@email.com,Palembang,Sumatera Selatan,Regular,2023-05-11
+1109,Agus Susanto,agus.susanto1109@email.com,Medan,Sumatera Utara,VIP,2024-11-24
+1110,Bambang Saputra,bambang.saputra1110@email.com,Yogyakarta,DI Yogyakarta,Regular,2024-02-20
+1111,Fajar Santoso,fajar.santoso1111@email.com,Bekasi,Jawa Barat,Regular,2024-03-16
+1112,Doni Utami,doni.utami1112@email.com,Yogyakarta,DI Yogyakarta,Member,2024-04-21
+1113,Nina Hartono,nina.hartono1113@email.com,Medan,Sumatera Utara,Regular,2024-04-29
+1114,Doni Saputra,doni.saputra1114@email.com,Medan,Sumatera Utara,Regular,2024-06-11
+1115,Rudi Firmansyah,rudi.firmansyah1115@email.com,Bandung,Jawa Barat,Regular,2023-08-29
+1116,Rudi Wibowo,rudi.wibowo1116@email.com,Tangerang,Banten,Member,2023-05-31
+1117,Budi Wijaya,budi.wijaya1117@email.com,Tangerang,Banten,VIP,2024-09-17
+1118,Gita Pratama,gita.pratama1118@email.com,Surabaya,Jawa Timur,Regular,2024-10-06
+1119,Lestari Hidayat,lestari.hidayat1119@email.com,Palembang,Sumatera Selatan,Member,2024-05-21
+1120,Dian Kurniawan,dian.kurniawan1120@email.com,Depok,Jawa Barat,Member,2023-01-06
+1121,Hendra Nugroho,hendra.nugroho1121@email.com,Makassar,Sulawesi Selatan,Regular,2023-06-30
+1122,Doni Ramadhan,doni.ramadhan1122@email.com,Surabaya,Jawa Timur,Regular,2023-09-13
+1123,Intan Nugroho,intan.nugroho1123@email.com,Surabaya,Jawa Timur,Regular,2024-04-20
+1124,Rudi Ramadhan,rudi.ramadhan1124@email.com,Malang,Jawa Timur,Regular,2024-03-29
+1125,Yusuf Ramadhan,yusuf.ramadhan1125@email.com,Semarang,Jawa Tengah,Member,2024-07-15
+1126,Nina Saputra,nina.saputra1126@email.com,Palembang,Sumatera Selatan,Member,2024-04-05
+1127,Joko Kurniawan,joko.kurniawan1127@email.com,Denpasar,Bali,Member,2024-06-17
+1128,Hadi Kurniawan,hadi.kurniawan1128@email.com,Bekasi,Jawa Barat,Regular,2024-12-31
+1129,Maya Kurniawan,maya.kurniawan1129@email.com,Bekasi,Jawa Barat,Regular,2024-07-07
+1130,Andi Lestari,andi.lestari1130@email.com,Depok,Jawa Barat,Regular,2024-12-11
+1131,Rizki Hidayat,rizki.hidayat1131@email.com,Bogor,Jawa Barat,Regular,2023-12-05
+1132,Fajar Hartono,fajar.hartono1132@email.com,Semarang,Jawa Tengah,Regular,2024-03-06
+1133,Dian Utami,dian.utami1133@email.com,Palembang,Sumatera Selatan,Regular,2024-08-12
+1134,Dian Putra,dian.putra1134@email.com,Jakarta,DKI Jakarta,VIP,2023-11-02
+1135,Citra Anggraini,citra.anggraini1135@email.com,Denpasar,Bali,Member,2024-03-05
+1136,Fajar Setiawan,fajar.setiawan1136@email.com,Makassar,Sulawesi Selatan,Member,2023-08-14
+1137,Hadi Kurniawan,hadi.kurniawan1137@email.com,Bekasi,Jawa Barat,Regular,2023-01-30
+1138,Dian Halim,dian.halim1138@email.com,Medan,Sumatera Utara,Member,2024-02-19
+1139,Bambang Saputra,bambang.saputra1139@email.com,Denpasar,Bali,Regular,2023-05-11
+1140,Yusuf Setiawan,yusuf.setiawan1140@email.com,Jakarta,DKI Jakarta,VIP,2024-08-29
+1141,Lestari Santoso,lestari.santoso1141@email.com,Bogor,Jawa Barat,Member,2023-05-19
+1142,Gita Hartono,gita.hartono1142@email.com,Depok,Jawa Barat,Regular,2024-01-24
+1143,Eko Hidayat,eko.hidayat1143@email.com,Surabaya,Jawa Timur,Regular,2024-01-24
+1144,Joko Susanto,joko.susanto1144@email.com,Bekasi,Jawa Barat,Member,2024-04-26
+1145,Budi Setiawan,budi.setiawan1145@email.com,Jakarta,DKI Jakarta,VIP,2023-12-25
+1146,Rina Pratama,rina.pratama1146@email.com,Makassar,Sulawesi Selatan,VIP,2023-02-11
+1147,Citra Santoso,citra.santoso1147@email.com,Tangerang,Banten,Regular,2023-01-21
+1148,Yusuf Lestari,yusuf.lestari1148@email.com,Tangerang,Banten,Regular,2024-11-16
+1149,Dewi Utami,dewi.utami1149@email.com,Tangerang,Banten,Regular,2023-09-20
+1150,Citra Maulana,citra.maulana1150@email.com,Depok,Jawa Barat,Member,2023-04-28
+1151,Citra Saputra,citra.saputra1151@email.com,Bekasi,Jawa Barat,Regular,2023-01-27
+1152,Intan Wibowo,intan.wibowo1152@email.com,Yogyakarta,DI Yogyakarta,Member,2024-01-20
+1153,Dian Hidayat,dian.hidayat1153@email.com,Bogor,Jawa Barat,Regular,2024-10-04
+1154,Rina Nugroho,rina.nugroho1154@email.com,Palembang,Sumatera Selatan,Member,2024-12-01
+1155,Yusuf Nugroho,yusuf.nugroho1155@email.com,Makassar,Sulawesi Selatan,VIP,2023-02-12
+1156,Sari Setiawan,sari.setiawan1156@email.com,Semarang,Jawa Tengah,Member,2023-03-12
+1157,Wati Halim,wati.halim1157@email.com,Jakarta,DKI Jakarta,Member,2024-05-16
+1158,Dewi Susanto,dewi.susanto1158@email.com,Bandung,Jawa Barat,Member,2024-04-15
+1159,Ayu Lestari,ayu.lestari1159@email.com,Semarang,Jawa Tengah,Regular,2024-06-18
+1160,Indah Permata,indah.permata1160@email.com,Yogyakarta,DI Yogyakarta,Member,2024-07-05
+1161,Citra Putra,citra.putra1161@email.com,Surabaya,Jawa Timur,Regular,2024-08-29
+1162,Joko Halim,joko.halim1162@email.com,Denpasar,Bali,Regular,2023-03-30
+1163,Joko Hartono,joko.hartono1163@email.com,Tangerang,Banten,Member,2024-08-06
+1164,Yusuf Anggraini,yusuf.anggraini1164@email.com,Bandung,Jawa Barat,Regular,2023-11-29
+1165,Putri Putra,putri.putra1165@email.com,Tangerang,Banten,Regular,2023-09-22
+1166,Eko Permata,eko.permata1166@email.com,Balikpapan,Kalimantan Timur,Regular,2023-10-10
+1167,Fajar Santoso,fajar.santoso1167@email.com,Malang,Jawa Timur,VIP,2023-03-29
+1168,Rina Susanto,rina.susanto1168@email.com,Surabaya,Jawa Timur,Regular,2023-09-04
+1169,Ayu Putra,ayu.putra1169@email.com,Medan,Sumatera Utara,Member,2024-04-03
+1170,Doni Santoso,doni.santoso1170@email.com,Bogor,Jawa Barat,Regular,2024-02-19
+1171,Ayu Kurniawan,ayu.kurniawan1171@email.com,Bekasi,Jawa Barat,Member,2024-01-13
+1172,Hadi Setiawan,hadi.setiawan1172@email.com,Malang,Jawa Timur,Regular,2024-07-17
+1173,Eko Maulana,eko.maulana1173@email.com,Palembang,Sumatera Selatan,Regular,2023-11-10
+1174,Joko Kurniawan,joko.kurniawan1174@email.com,Bogor,Jawa Barat,Member,2023-11-20
+1175,Dewi Setiawan,dewi.setiawan1175@email.com,Makassar,Sulawesi Selatan,Member,2023-07-16
+1176,Agus Putra,agus.putra1176@email.com,Bekasi,Jawa Barat,Member,2024-06-21
+1177,Yusuf Wibowo,yusuf.wibowo1177@email.com,Bogor,Jawa Barat,Member,2023-10-31
+1178,Rina Maulana,rina.maulana1178@email.com,Depok,Jawa Barat,Regular,2024-12-26
+1179,Fajar Lestari,fajar.lestari1179@email.com,Bekasi,Jawa Barat,Regular,2023-02-25
+1180,Fajar Wibowo,fajar.wibowo1180@email.com,Palembang,Sumatera Selatan,VIP,2024-10-15
+1181,Gita Putra,gita.putra1181@email.com,Bogor,Jawa Barat,Member,2024-08-10
+1182,Maya Putra,maya.putra1182@email.com,Surabaya,Jawa Timur,Regular,2023-07-08
+1183,Siti Permata,siti.permata1183@email.com,Denpasar,Bali,Regular,2023-03-08
+1184,Dian Putra,dian.putra1184@email.com,Bogor,Jawa Barat,Regular,2024-12-03
+1185,Siti Lestari,siti.lestari1185@email.com,Depok,Jawa Barat,Member,2023-11-08
+1186,Andi Kurniawan,andi.kurniawan1186@email.com,Bogor,Jawa Barat,Regular,2024-03-02
+1187,Yusuf Firmansyah,yusuf.firmansyah1187@email.com,Makassar,Sulawesi Selatan,Member,2024-06-19
+1188,Dian Hartono,dian.hartono1188@email.com,Balikpapan,Kalimantan Timur,Regular,2024-08-25
+1189,Bayu Wibowo,bayu.wibowo1189@email.com,Yogyakarta,DI Yogyakarta,Member,2024-09-16
+1190,Bambang Nugroho,bambang.nugroho1190@email.com,Makassar,Sulawesi Selatan,Regular,2023-08-05
+1191,Joko Pratama,joko.pratama1191@email.com,Depok,Jawa Barat,Regular,2024-07-19
+1192,Andi Saputra,andi.saputra1192@email.com,Jakarta,DKI Jakarta,Regular,2024-12-06
+1193,Yusuf Putra,yusuf.putra1193@email.com,Bekasi,Jawa Barat,Regular,2023-10-23
+1194,Ayu Wibowo,ayu.wibowo1194@email.com,Palembang,Sumatera Selatan,Member,2023-03-14
+1195,Rudi Kurniawan,rudi.kurniawan1195@email.com,Balikpapan,Kalimantan Timur,Regular,2024-10-02
+1196,Lestari Hidayat,lestari.hidayat1196@email.com,Semarang,Jawa Tengah,Regular,2023-08-19
+1197,Indah Lestari,indah.lestari1197@email.com,Balikpapan,Kalimantan Timur,Regular,2023-05-26
+1198,Andi Wijaya,andi.wijaya1198@email.com,Depok,Jawa Barat,Member,2024-09-01
+1199,Bambang Utami,bambang.utami1199@email.com,Balikpapan,Kalimantan Timur,Regular,2023-05-08
+1200,Nina Wibowo,nina.wibowo1200@email.com,Palembang,Sumatera Selatan,Regular,2023-10-06
+1201,Wati Setiawan,wati.setiawan1201@email.com,Surabaya,Jawa Timur,Regular,2024-09-04
+1202,Siti Susanto,siti.susanto1202@email.com,Palembang,Sumatera Selatan,Regular,2023-09-14
+1203,Budi Pratama,budi.pratama1203@email.com,Tangerang,Banten,VIP,2024-08-12
+1204,Lestari Santoso,lestari.santoso1204@email.com,Makassar,Sulawesi Selatan,Member,2023-10-03
+1205,Lestari Wijaya,lestari.wijaya1205@email.com,Makassar,Sulawesi Selatan,Member,2024-04-26
+1206,Wati Hartono,wati.hartono1206@email.com,Balikpapan,Kalimantan Timur,Regular,2024-08-22
+1207,Bayu Putra,bayu.putra1207@email.com,Bogor,Jawa Barat,Regular,2024-02-23
+1208,Eko Halim,eko.halim1208@email.com,Medan,Sumatera Utara,Regular,2023-06-14
+1209,Eko Susanto,eko.susanto1209@email.com,Palembang,Sumatera Selatan,Regular,2024-11-09
+1210,Dian Setiawan,dian.setiawan1210@email.com,Jakarta,DKI Jakarta,Regular,2023-11-19
+1211,Joko Halim,joko.halim1211@email.com,Bogor,Jawa Barat,VIP,2024-02-18
+1212,Gita Ramadhan,gita.ramadhan1212@email.com,Denpasar,Bali,VIP,2024-11-04
+1213,Gita Setiawan,gita.setiawan1213@email.com,Surabaya,Jawa Timur,Regular,2023-07-12
+1214,Wati Maulana,wati.maulana1214@email.com,Yogyakarta,DI Yogyakarta,Member,2024-10-02
+1215,Nina Wijaya,nina.wijaya1215@email.com,Tangerang,Banten,Regular,2023-05-15
+1216,Intan Wibowo,intan.wibowo1216@email.com,Surabaya,Jawa Timur,Member,2024-05-11
+1217,Dewi Santoso,dewi.santoso1217@email.com,Medan,Sumatera Utara,Member,2023-09-03
+1218,Ayu Saputra,ayu.saputra1218@email.com,Bekasi,Jawa Barat,Regular,2024-07-19
+1219,Bayu Pratama,bayu.pratama1219@email.com,Tangerang,Banten,VIP,2023-04-27
+1220,Nina Nugroho,nina.nugroho1220@email.com,Medan,Sumatera Utara,Member,2024-05-25
+1221,Intan Wibowo,intan.wibowo1221@email.com,Malang,Jawa Timur,Member,2024-03-01
+1222,Eka Putra,eka.putra1222@email.com,Surabaya,Jawa Timur,Regular,2024-07-18
+1223,Rizki Anggraini,rizki.anggraini1223@email.com,Tangerang,Banten,VIP,2024-06-04
+1224,Bambang Lestari,bambang.lestari1224@email.com,Denpasar,Bali,Regular,2024-02-29
+1225,Eko Ramadhan,eko.ramadhan1225@email.com,Bekasi,Jawa Barat,Member,2023-10-17
+1226,Bambang Wibowo,bambang.wibowo1226@email.com,Denpasar,Bali,Regular,2024-11-06
+1227,Hadi Lestari,hadi.lestari1227@email.com,Surabaya,Jawa Timur,Regular,2023-12-20
+1228,Eko Setiawan,eko.setiawan1228@email.com,Makassar,Sulawesi Selatan,Regular,2024-04-11
+1229,Intan Halim,intan.halim1229@email.com,Denpasar,Bali,Regular,2024-12-15
+1230,Rina Utami,rina.utami1230@email.com,Semarang,Jawa Tengah,Regular,2024-02-25
+1231,Siti Halim,siti.halim1231@email.com,Palembang,Sumatera Selatan,Regular,2024-01-26
+1232,Dian Lestari,dian.lestari1232@email.com,Surabaya,Jawa Timur,VIP,2023-05-10
+1233,Wati Utami,wati.utami1233@email.com,Bandung,Jawa Barat,Member,2024-03-26
+1234,Dewi Ramadhan,dewi.ramadhan1234@email.com,Balikpapan,Kalimantan Timur,Regular,2023-05-28
+1235,Bayu Lestari,bayu.lestari1235@email.com,Bogor,Jawa Barat,Regular,2023-09-29
+1236,Eko Firmansyah,eko.firmansyah1236@email.com,Palembang,Sumatera Selatan,Regular,2023-03-24
+1237,Gita Halim,gita.halim1237@email.com,Denpasar,Bali,Member,2024-06-30
+1238,Dian Halim,dian.halim1238@email.com,Medan,Sumatera Utara,Member,2024-05-14
+1239,Gita Setiawan,gita.setiawan1239@email.com,Jakarta,DKI Jakarta,Member,2023-08-29
+1240,Indah Wibowo,indah.wibowo1240@email.com,Tangerang,Banten,Member,2024-03-20
+1241,Dewi Nugroho,dewi.nugroho1241@email.com,Surabaya,Jawa Timur,Regular,2023-11-03
+1242,Hendra Santoso,hendra.santoso1242@email.com,Jakarta,DKI Jakarta,Regular,2023-02-27
+1243,Maya Maulana,maya.maulana1243@email.com,Bandung,Jawa Barat,Regular,2023-09-08
+1244,Wati Susanto,wati.susanto1244@email.com,Yogyakarta,DI Yogyakarta,Member,2023-07-04
+1245,Putri Saputra,putri.saputra1245@email.com,Bogor,Jawa Barat,Member,2024-01-27
+1246,Yusuf Kurniawan,yusuf.kurniawan1246@email.com,Surabaya,Jawa Timur,VIP,2023-05-27
+1247,Rina Hartono,rina.hartono1247@email.com,Medan,Sumatera Utara,Regular,2023-09-19
+1248,Rudi Santoso,rudi.santoso1248@email.com,Balikpapan,Kalimantan Timur,Member,2023-10-22
+1249,Rudi Setiawan,rudi.setiawan1249@email.com,Depok,Jawa Barat,Regular,2023-12-20
+1250,Lestari Wibowo,lestari.wibowo1250@email.com,Medan,Sumatera Utara,VIP,2024-12-07
+1251,Joko Hartono,joko.hartono1251@email.com,Denpasar,Bali,Regular,2024-01-29
+1252,Gita Putra,gita.putra1252@email.com,Bogor,Jawa Barat,Regular,2024-08-08
+1253,Sari Utami,sari.utami1253@email.com,Bekasi,Jawa Barat,VIP,2023-10-30
+1254,Budi Anggraini,budi.anggraini1254@email.com,Bekasi,Jawa Barat,Regular,2024-12-03
+1255,Citra Wijaya,citra.wijaya1255@email.com,Balikpapan,Kalimantan Timur,Member,2024-05-23
+1256,Eka Wibowo,eka.wibowo1256@email.com,Makassar,Sulawesi Selatan,Member,2024-09-13
+1257,Doni Maulana,doni.maulana1257@email.com,Tangerang,Banten,Member,2024-09-27
+1258,Joko Lestari,joko.lestari1258@email.com,Medan,Sumatera Utara,Regular,2024-10-04
+1259,Indah Wijaya,indah.wijaya1259@email.com,Bekasi,Jawa Barat,Member,2023-02-04
+1260,Lestari Maulana,lestari.maulana1260@email.com,Palembang,Sumatera Selatan,Regular,2023-10-30
+1261,Eko Susanto,eko.susanto1261@email.com,Depok,Jawa Barat,Regular,2024-07-06
+1262,Hendra Maulana,hendra.maulana1262@email.com,Malang,Jawa Timur,Regular,2023-10-07
+1263,Eka Saputra,eka.saputra1263@email.com,Bekasi,Jawa Barat,VIP,2024-05-08
+1264,Doni Wibowo,doni.wibowo1264@email.com,Palembang,Sumatera Selatan,Member,2023-04-28
+1265,Nina Pratama,nina.pratama1265@email.com,Depok,Jawa Barat,Member,2023-08-20
+1266,Gita Anggraini,gita.anggraini1266@email.com,Denpasar,Bali,Member,2024-01-10
+1267,Andi Anggraini,andi.anggraini1267@email.com,Jakarta,DKI Jakarta,Regular,2023-05-07
+1268,Nina Maulana,nina.maulana1268@email.com,Medan,Sumatera Utara,Member,2023-09-26
+1269,Lestari Anggraini,lestari.anggraini1269@email.com,Denpasar,Bali,Member,2024-01-16
+1270,Dewi Kurniawan,dewi.kurniawan1270@email.com,Surabaya,Jawa Timur,Regular,2024-07-28
+1271,Eko Firmansyah,eko.firmansyah1271@email.com,Tangerang,Banten,Member,2024-10-12
+1272,Eka Hartono,eka.hartono1272@email.com,Balikpapan,Kalimantan Timur,Member,2024-10-26
+1273,Bayu Nugroho,bayu.nugroho1273@email.com,Depok,Jawa Barat,Regular,2023-02-08
+1274,Maya Putra,maya.putra1274@email.com,Bogor,Jawa Barat,Regular,2024-07-04
+1275,Rizki Anggraini,rizki.anggraini1275@email.com,Surabaya,Jawa Timur,Regular,2024-12-14
+1276,Fajar Susanto,fajar.susanto1276@email.com,Yogyakarta,DI Yogyakarta,Member,2023-06-08
+1277,Hendra Susanto,hendra.susanto1277@email.com,Medan,Sumatera Utara,Regular,2024-05-16
+1278,Yusuf Susanto,yusuf.susanto1278@email.com,Bekasi,Jawa Barat,Regular,2024-01-15
+1279,Agus Hartono,agus.hartono1279@email.com,Surabaya,Jawa Timur,VIP,2024-01-07
+1280,Dewi Maulana,dewi.maulana1280@email.com,Malang,Jawa Timur,VIP,2024-10-22
+1281,Sari Wijaya,sari.wijaya1281@email.com,Semarang,Jawa Tengah,Regular,2023-05-06
+1282,Gita Hartono,gita.hartono1282@email.com,Bogor,Jawa Barat,Member,2024-10-19
+1283,Indah Firmansyah,indah.firmansyah1283@email.com,Jakarta,DKI Jakarta,Regular,2023-12-08
+1284,Rina Lestari,rina.lestari1284@email.com,Makassar,Sulawesi Selatan,Regular,2023-03-12
+1285,Eka Setiawan,eka.setiawan1285@email.com,Tangerang,Banten,Regular,2023-08-27
+1286,Eko Lestari,eko.lestari1286@email.com,Makassar,Sulawesi Selatan,VIP,2023-01-03
+1287,Joko Lestari,joko.lestari1287@email.com,Depok,Jawa Barat,Regular,2023-06-28
+1288,Dewi Santoso,dewi.santoso1288@email.com,Depok,Jawa Barat,Regular,2023-09-01
+1289,Lestari Halim,lestari.halim1289@email.com,Jakarta,DKI Jakarta,Regular,2023-02-23
+1290,Rizki Susanto,rizki.susanto1290@email.com,Malang,Jawa Timur,Regular,2023-03-07
+1291,Hadi Hartono,hadi.hartono1291@email.com,Makassar,Sulawesi Selatan,Regular,2024-08-30
+1292,Dewi Hartono,dewi.hartono1292@email.com,Malang,Jawa Timur,Regular,2024-09-21
+1293,Siti Ramadhan,siti.ramadhan1293@email.com,Bekasi,Jawa Barat,Regular,2023-02-01
+1294,Siti Putra,siti.putra1294@email.com,Denpasar,Bali,Regular,2024-12-03
+1295,Dewi Putra,dewi.putra1295@email.com,Palembang,Sumatera Selatan,VIP,2023-03-17
+1296,Hendra Pratama,hendra.pratama1296@email.com,Bandung,Jawa Barat,Member,2023-03-09
+1297,Rizki Permata,rizki.permata1297@email.com,Yogyakarta,DI Yogyakarta,Member,2024-07-15
+1298,Ayu Halim,ayu.halim1298@email.com,Semarang,Jawa Tengah,VIP,2024-06-27
+1299,Maya Hartono,maya.hartono1299@email.com,Malang,Jawa Timur,Member,2023-04-12
+1300,Doni Nugroho,doni.nugroho1300@email.com,Denpasar,Bali,Member,2024-07-18
+1301,Bambang Hidayat,bambang.hidayat1301@email.com,Semarang,Jawa Tengah,Regular,2023-08-22
+1302,Bayu Halim,bayu.halim1302@email.com,Denpasar,Bali,Regular,2024-03-01
+1303,Bambang Nugroho,bambang.nugroho1303@email.com,Bandung,Jawa Barat,Regular,2024-11-12
+1304,Joko Maulana,joko.maulana1304@email.com,Depok,Jawa Barat,Member,2024-04-30
+1305,Andi Pratama,andi.pratama1305@email.com,Denpasar,Bali,Regular,2024-03-18
+1306,Dewi Maulana,dewi.maulana1306@email.com,Makassar,Sulawesi Selatan,Regular,2023-03-03
+1307,Lestari Setiawan,lestari.setiawan1307@email.com,Malang,Jawa Timur,Regular,2023-05-06
+1308,Bayu Maulana,bayu.maulana1308@email.com,Denpasar,Bali,Member,2024-03-09
+1309,Gita Wijaya,gita.wijaya1309@email.com,Bekasi,Jawa Barat,Member,2023-12-27
+1310,Dewi Utami,dewi.utami1310@email.com,Malang,Jawa Timur,Regular,2024-11-03
+1311,Hadi Kurniawan,hadi.kurniawan1311@email.com,Denpasar,Bali,Regular,2024-07-23
+1312,Sari Nugroho,sari.nugroho1312@email.com,Makassar,Sulawesi Selatan,Regular,2023-08-20
+1313,Doni Susanto,doni.susanto1313@email.com,Denpasar,Bali,Regular,2024-09-28
+1314,Yusuf Setiawan,yusuf.setiawan1314@email.com,Jakarta,DKI Jakarta,Member,2024-11-04
+1315,Eka Permata,eka.permata1315@email.com,Jakarta,DKI Jakarta,Regular,2024-12-20
+1316,Citra Wibowo,citra.wibowo1316@email.com,Balikpapan,Kalimantan Timur,Regular,2023-01-07
+1317,Putri Lestari,putri.lestari1317@email.com,Yogyakarta,DI Yogyakarta,Member,2023-03-13
+1318,Rizki Santoso,rizki.santoso1318@email.com,Bogor,Jawa Barat,Member,2023-08-09
+1319,Dian Susanto,dian.susanto1319@email.com,Surabaya,Jawa Timur,Regular,2024-01-14
+1320,Maya Halim,maya.halim1320@email.com,Makassar,Sulawesi Selatan,VIP,2024-09-02
+1321,Andi Wijaya,andi.wijaya1321@email.com,Depok,Jawa Barat,Regular,2024-09-24
+1322,Siti Pratama,siti.pratama1322@email.com,Bekasi,Jawa Barat,Regular,2024-03-10
+1323,Hadi Firmansyah,hadi.firmansyah1323@email.com,Surabaya,Jawa Timur,Regular,2023-08-09
+1324,Citra Ramadhan,citra.ramadhan1324@email.com,Bogor,Jawa Barat,Regular,2023-04-24
+1325,Maya Utami,maya.utami1325@email.com,Surabaya,Jawa Timur,Regular,2023-11-12
+1326,Siti Kurniawan,siti.kurniawan1326@email.com,Semarang,Jawa Tengah,VIP,2023-02-26
+1327,Budi Hidayat,budi.hidayat1327@email.com,Bekasi,Jawa Barat,VIP,2023-05-21
+1328,Citra Permata,citra.permata1328@email.com,Bekasi,Jawa Barat,Regular,2023-01-08
+1329,Hadi Susanto,hadi.susanto1329@email.com,Depok,Jawa Barat,Regular,2024-06-29
+1330,Ayu Kurniawan,ayu.kurniawan1330@email.com,Malang,Jawa Timur,Regular,2024-11-15
+1331,Doni Maulana,doni.maulana1331@email.com,Bogor,Jawa Barat,Regular,2023-02-13
+1332,Bayu Santoso,bayu.santoso1332@email.com,Surabaya,Jawa Timur,VIP,2023-11-17
+1333,Lestari Susanto,lestari.susanto1333@email.com,Yogyakarta,DI Yogyakarta,Regular,2024-10-17
+1334,Bayu Wibowo,bayu.wibowo1334@email.com,Bogor,Jawa Barat,Regular,2023-11-29
+1335,Putri Firmansyah,putri.firmansyah1335@email.com,Surabaya,Jawa Timur,Member,2024-01-06
+1336,Andi Susanto,andi.susanto1336@email.com,Denpasar,Bali,Regular,2024-03-22
+1337,Lestari Anggraini,lestari.anggraini1337@email.com,Malang,Jawa Timur,Regular,2023-11-14
+1338,Bambang Halim,bambang.halim1338@email.com,Tangerang,Banten,Regular,2023-06-22
+1339,Andi Ramadhan,andi.ramadhan1339@email.com,Medan,Sumatera Utara,Regular,2024-06-06
+1340,Agus Maulana,agus.maulana1340@email.com,Bandung,Jawa Barat,Member,2024-10-22
+1341,Eka Lestari,eka.lestari1341@email.com,Tangerang,Banten,Regular,2023-09-20
+1342,Agus Saputra,agus.saputra1342@email.com,Yogyakarta,DI Yogyakarta,Regular,2024-11-02
+1343,Andi Saputra,andi.saputra1343@email.com,Makassar,Sulawesi Selatan,Member,2024-04-20
+1344,Citra Utami,citra.utami1344@email.com,Makassar,Sulawesi Selatan,Regular,2024-11-28
+1345,Intan Utami,intan.utami1345@email.com,Medan,Sumatera Utara,Member,2024-10-01
+1346,Eko Halim,eko.halim1346@email.com,Depok,Jawa Barat,Regular,2024-04-25
+1347,Nina Wibowo,nina.wibowo1347@email.com,Makassar,Sulawesi Selatan,Regular,2023-02-27
+1348,Sari Ramadhan,sari.ramadhan1348@email.com,Bogor,Jawa Barat,Regular,2024-04-07
+1349,Siti Wijaya,siti.wijaya1349@email.com,Bandung,Jawa Barat,Member,2023-03-20
+1350,Indah Pratama,indah.pratama1350@email.com,Yogyakarta,DI Yogyakarta,Regular,2024-01-29
+1351,Nina Utami,nina.utami1351@email.com,Malang,Jawa Timur,VIP,2023-02-12
+1352,Nina Utami,nina.utami1352@email.com,Medan,Sumatera Utara,Regular,2024-09-11
+1353,Hadi Ramadhan,hadi.ramadhan1353@email.com,Depok,Jawa Barat,VIP,2024-04-06
+1354,Dewi Halim,dewi.halim1354@email.com,Palembang,Sumatera Selatan,Regular,2024-10-23
+1355,Putri Wijaya,putri.wijaya1355@email.com,Tangerang,Banten,Member,2024-03-25
+1356,Wati Ramadhan,wati.ramadhan1356@email.com,Yogyakarta,DI Yogyakarta,Regular,2024-01-17
+1357,Intan Wibowo,intan.wibowo1357@email.com,Semarang,Jawa Tengah,Regular,2023-12-13
+1358,Rudi Firmansyah,rudi.firmansyah1358@email.com,Jakarta,DKI Jakarta,Member,2024-10-24
+1359,Eko Pratama,eko.pratama1359@email.com,Bandung,Jawa Barat,Regular,2024-11-25
+1360,Dian Wibowo,dian.wibowo1360@email.com,Bekasi,Jawa Barat,Member,2024-11-03
+1361,Intan Firmansyah,intan.firmansyah1361@email.com,Denpasar,Bali,Regular,2023-03-25
+1362,Lestari Lestari,lestari.lestari1362@email.com,Balikpapan,Kalimantan Timur,Regular,2024-11-02
+1363,Ayu Anggraini,ayu.anggraini1363@email.com,Depok,Jawa Barat,Regular,2023-03-28
+1364,Maya Setiawan,maya.setiawan1364@email.com,Semarang,Jawa Tengah,Member,2023-12-03
+1365,Eka Lestari,eka.lestari1365@email.com,Medan,Sumatera Utara,Member,2024-12-02
+1366,Intan Ramadhan,intan.ramadhan1366@email.com,Bogor,Jawa Barat,Member,2024-03-09
+1367,Wati Maulana,wati.maulana1367@email.com,Jakarta,DKI Jakarta,Regular,2023-07-04
+1368,Agus Halim,agus.halim1368@email.com,Makassar,Sulawesi Selatan,Regular,2023-08-20
+1369,Rizki Lestari,rizki.lestari1369@email.com,Bogor,Jawa Barat,Regular,2023-04-14
+1370,Wati Setiawan,wati.setiawan1370@email.com,Denpasar,Bali,Member,2024-06-23
+1371,Siti Halim,siti.halim1371@email.com,Balikpapan,Kalimantan Timur,Member,2023-05-15
+1372,Yusuf Anggraini,yusuf.anggraini1372@email.com,Depok,Jawa Barat,Regular,2024-12-10
+1373,Citra Firmansyah,citra.firmansyah1373@email.com,Makassar,Sulawesi Selatan,VIP,2024-03-24
+1374,Siti Susanto,siti.susanto1374@email.com,Bandung,Jawa Barat,Member,2023-09-01
+1375,Nina Firmansyah,nina.firmansyah1375@email.com,Bekasi,Jawa Barat,Member,2024-04-04
+1376,Rina Setiawan,rina.setiawan1376@email.com,Tangerang,Banten,Regular,2024-04-25
+1377,Hendra Hidayat,hendra.hidayat1377@email.com,Bandung,Jawa Barat,Member,2024-08-07
+1378,Nina Hartono,nina.hartono1378@email.com,Makassar,Sulawesi Selatan,Regular,2024-01-27
+1379,Wati Ramadhan,wati.ramadhan1379@email.com,Semarang,Jawa Tengah,VIP,2023-07-24
+1380,Doni Firmansyah,doni.firmansyah1380@email.com,Depok,Jawa Barat,Member,2023-02-23
+1381,Indah Putra,indah.putra1381@email.com,Denpasar,Bali,Regular,2023-04-16
+1382,Ayu Ramadhan,ayu.ramadhan1382@email.com,Denpasar,Bali,Regular,2023-03-27
+1383,Citra Saputra,citra.saputra1383@email.com,Bekasi,Jawa Barat,Regular,2024-06-09
+1384,Rizki Susanto,rizki.susanto1384@email.com,Bogor,Jawa Barat,VIP,2023-08-16
+1385,Eka Hartono,eka.hartono1385@email.com,Balikpapan,Kalimantan Timur,Regular,2023-01-28
+1386,Bayu Wijaya,bayu.wijaya1386@email.com,Semarang,Jawa Tengah,Regular,2023-08-30
+1387,Dian Pratama,dian.pratama1387@email.com,Bandung,Jawa Barat,Regular,2023-11-23
+1388,Intan Nugroho,intan.nugroho1388@email.com,Denpasar,Bali,Member,2023-12-10
+1389,Doni Lestari,doni.lestari1389@email.com,Depok,Jawa Barat,Regular,2024-04-28
+1390,Ayu Lestari,ayu.lestari1390@email.com,Makassar,Sulawesi Selatan,Member,2024-04-04
+1391,Yusuf Santoso,yusuf.santoso1391@email.com,Balikpapan,Kalimantan Timur,Regular,2023-09-20
+1392,Agus Lestari,agus.lestari1392@email.com,Malang,Jawa Timur,VIP,2024-09-15
+1393,Wati Susanto,wati.susanto1393@email.com,Bogor,Jawa Barat,Member,2023-09-01
+1394,Maya Nugroho,maya.nugroho1394@email.com,Jakarta,DKI Jakarta,Regular,2024-10-16
+1395,Doni Firmansyah,doni.firmansyah1395@email.com,Surabaya,Jawa Timur,Regular,2024-05-26
+1396,Yusuf Setiawan,yusuf.setiawan1396@email.com,Jakarta,DKI Jakarta,Member,2024-08-11
+1397,Rina Lestari,rina.lestari1397@email.com,Bekasi,Jawa Barat,Regular,2024-09-21
+1398,Sari Kurniawan,sari.kurniawan1398@email.com,Yogyakarta,DI Yogyakarta,Regular,2024-11-11
+1399,Rudi Pratama,rudi.pratama1399@email.com,Malang,Jawa Timur,VIP,2023-03-11
+1400,Wati Setiawan,wati.setiawan1400@email.com,Malang,Jawa Timur,Member,2024-06-03
+1401,Fajar Santoso,fajar.santoso1401@email.com,Semarang,Jawa Tengah,Member,2023-02-14
+1402,Indah Anggraini,indah.anggraini1402@email.com,Bandung,Jawa Barat,Regular,2023-01-17
+1403,Sari Pratama,sari.pratama1403@email.com,Bandung,Jawa Barat,Regular,2024-11-03
+1404,Indah Nugroho,indah.nugroho1404@email.com,Makassar,Sulawesi Selatan,Regular,2023-12-07
+1405,Rizki Wijaya,rizki.wijaya1405@email.com,Bandung,Jawa Barat,Regular,2024-10-20
+1406,Putri Hartono,putri.hartono1406@email.com,Palembang,Sumatera Selatan,Regular,2023-07-06
+1407,Doni Lestari,doni.lestari1407@email.com,Bogor,Jawa Barat,Member,2024-04-13
+1408,Siti Wibowo,siti.wibowo1408@email.com,Tangerang,Banten,Regular,2023-07-24
+1409,Hendra Wijaya,hendra.wijaya1409@email.com,Bandung,Jawa Barat,VIP,2024-06-11
+1410,Dian Setiawan,dian.setiawan1410@email.com,Surabaya,Jawa Timur,Regular,2024-10-24
+1411,Agus Wibowo,agus.wibowo1411@email.com,Bandung,Jawa Barat,Member,2023-02-18
+1412,Gita Halim,gita.halim1412@email.com,Bekasi,Jawa Barat,Regular,2024-01-12
+1413,Bayu Anggraini,bayu.anggraini1413@email.com,Palembang,Sumatera Selatan,Regular,2024-01-31
+1414,Eko Saputra,eko.saputra1414@email.com,Surabaya,Jawa Timur,Member,2024-01-12
+1415,Intan Ramadhan,intan.ramadhan1415@email.com,Bekasi,Jawa Barat,Member,2024-03-10
+1416,Andi Susanto,andi.susanto1416@email.com,Yogyakarta,DI Yogyakarta,VIP,2023-07-04
+1417,Fajar Wibowo,fajar.wibowo1417@email.com,Bandung,Jawa Barat,Regular,2023-12-02
+1418,Rudi Wibowo,rudi.wibowo1418@email.com,Bekasi,Jawa Barat,Regular,2024-03-12
+1419,Putri Hartono,putri.hartono1419@email.com,Bandung,Jawa Barat,Regular,2023-12-28
+1420,Yusuf Susanto,yusuf.susanto1420@email.com,Bekasi,Jawa Barat,Member,2023-02-28
+1421,Andi Anggraini,andi.anggraini1421@email.com,Bandung,Jawa Barat,Regular,2024-11-26
+1422,Putri Santoso,putri.santoso1422@email.com,Depok,Jawa Barat,Member,2024-11-25
+1423,Doni Hartono,doni.hartono1423@email.com,Jakarta,DKI Jakarta,Regular,2023-08-30
+1424,Citra Maulana,citra.maulana1424@email.com,Bandung,Jawa Barat,Regular,2024-08-03
+1425,Siti Firmansyah,siti.firmansyah1425@email.com,Depok,Jawa Barat,Member,2024-01-15
+1426,Sari Hartono,sari.hartono1426@email.com,Makassar,Sulawesi Selatan,Regular,2023-05-21
+1427,Wati Maulana,wati.maulana1427@email.com,Semarang,Jawa Tengah,Regular,2023-10-13
+1428,Rina Nugroho,rina.nugroho1428@email.com,Jakarta,DKI Jakarta,Member,2024-05-26
+1429,Wati Anggraini,wati.anggraini1429@email.com,Balikpapan,Kalimantan Timur,Regular,2023-09-26
+1430,Citra Permata,citra.permata1430@email.com,Palembang,Sumatera Selatan,Regular,2024-09-18
+1431,Maya Putra,maya.putra1431@email.com,Tangerang,Banten,Regular,2023-03-17
+1432,Nina Saputra,nina.saputra1432@email.com,Balikpapan,Kalimantan Timur,Member,2023-03-31
+1433,Doni Halim,doni.halim1433@email.com,Medan,Sumatera Utara,Regular,2023-03-08
+1434,Fajar Setiawan,fajar.setiawan1434@email.com,Bekasi,Jawa Barat,Member,2023-06-11
+1435,Ayu Saputra,ayu.saputra1435@email.com,Makassar,Sulawesi Selatan,Regular,2023-08-18
+1436,Dewi Hidayat,dewi.hidayat1436@email.com,Makassar,Sulawesi Selatan,Regular,2024-05-20
+1437,Budi Maulana,budi.maulana1437@email.com,Malang,Jawa Timur,Regular,2024-04-23
+1438,Doni Setiawan,doni.setiawan1438@email.com,Depok,Jawa Barat,Member,2023-03-30
+1439,Andi Wibowo,andi.wibowo1439@email.com,Semarang,Jawa Tengah,VIP,2024-05-05
+1440,Wati Susanto,wati.susanto1440@email.com,Makassar,Sulawesi Selatan,Regular,2024-08-11
+1441,Andi Lestari,andi.lestari1441@email.com,Bandung,Jawa Barat,Member,2024-04-05
+1442,Nina Ramadhan,nina.ramadhan1442@email.com,Bandung,Jawa Barat,Regular,2024-07-18
+1443,Indah Utami,indah.utami1443@email.com,Depok,Jawa Barat,Member,2023-05-13
+1444,Bayu Ramadhan,bayu.ramadhan1444@email.com,Balikpapan,Kalimantan Timur,Member,2023-05-08
+1445,Wati Lestari,wati.lestari1445@email.com,Bekasi,Jawa Barat,Regular,2023-11-27
+1446,Intan Kurniawan,intan.kurniawan1446@email.com,Bandung,Jawa Barat,VIP,2024-06-15
+1447,Hendra Wibowo,hendra.wibowo1447@email.com,Denpasar,Bali,Regular,2023-07-21
+1448,Indah Setiawan,indah.setiawan1448@email.com,Bekasi,Jawa Barat,Regular,2023-11-07
+1449,Yusuf Setiawan,yusuf.setiawan1449@email.com,Bogor,Jawa Barat,Regular,2023-06-22
+1450,Lestari Utami,lestari.utami1450@email.com,Depok,Jawa Barat,Regular,2024-10-01
+1451,Bambang Firmansyah,bambang.firmansyah1451@email.com,Bandung,Jawa Barat,Member,2024-07-31
+1452,Siti Santoso,siti.santoso1452@email.com,Bogor,Jawa Barat,Regular,2024-10-18
+1453,Citra Utami,citra.utami1453@email.com,Bekasi,Jawa Barat,Member,2024-08-08
+1454,Bayu Firmansyah,bayu.firmansyah1454@email.com,Medan,Sumatera Utara,Regular,2024-10-04
+1455,Fajar Wibowo,fajar.wibowo1455@email.com,Medan,Sumatera Utara,VIP,2024-05-09
+1456,Rina Anggraini,rina.anggraini1456@email.com,Bekasi,Jawa Barat,Regular,2024-12-06
+1457,Siti Saputra,siti.saputra1457@email.com,Surabaya,Jawa Timur,Regular,2024-04-20
+1458,Agus Halim,agus.halim1458@email.com,Yogyakarta,DI Yogyakarta,Regular,2023-11-23
+1459,Bambang Maulana,bambang.maulana1459@email.com,Semarang,Jawa Tengah,Regular,2024-01-15
+1460,Wati Setiawan,wati.setiawan1460@email.com,Bogor,Jawa Barat,Regular,2024-04-22
+1461,Dewi Permata,dewi.permata1461@email.com,Surabaya,Jawa Timur,Regular,2023-04-10
+1462,Siti Wibowo,siti.wibowo1462@email.com,Semarang,Jawa Tengah,Member,2024-03-04
+1463,Rina Saputra,rina.saputra1463@email.com,Denpasar,Bali,Regular,2024-08-14
+1464,Bambang Halim,bambang.halim1464@email.com,Tangerang,Banten,Member,2024-05-25
+1465,Wati Hartono,wati.hartono1465@email.com,Surabaya,Jawa Timur,Member,2024-05-24
+1466,Budi Pratama,budi.pratama1466@email.com,Semarang,Jawa Tengah,Regular,2023-09-04
+1467,Agus Utami,agus.utami1467@email.com,Bandung,Jawa Barat,Regular,2023-10-16
+1468,Hadi Firmansyah,hadi.firmansyah1468@email.com,Balikpapan,Kalimantan Timur,Member,2024-11-19
+1469,Hadi Wibowo,hadi.wibowo1469@email.com,Malang,Jawa Timur,Regular,2023-04-21
+1470,Bayu Lestari,bayu.lestari1470@email.com,Balikpapan,Kalimantan Timur,Regular,2024-01-10
+1471,Citra Anggraini,citra.anggraini1471@email.com,Bandung,Jawa Barat,Regular,2023-02-22
+1472,Lestari Setiawan,lestari.setiawan1472@email.com,Tangerang,Banten,Regular,2023-10-23
+1473,Andi Anggraini,andi.anggraini1473@email.com,Malang,Jawa Timur,Regular,2024-07-17
+1474,Joko Firmansyah,joko.firmansyah1474@email.com,Medan,Sumatera Utara,Member,2023-05-12
+1475,Dewi Anggraini,dewi.anggraini1475@email.com,Bandung,Jawa Barat,Member,2023-12-14
+1476,Fajar Maulana,fajar.maulana1476@email.com,Makassar,Sulawesi Selatan,Regular,2024-09-08
+1477,Wati Anggraini,wati.anggraini1477@email.com,Malang,Jawa Timur,Regular,2023-02-09
+1478,Rizki Halim,rizki.halim1478@email.com,Makassar,Sulawesi Selatan,Regular,2024-04-12
+1479,Rizki Firmansyah,rizki.firmansyah1479@email.com,Balikpapan,Kalimantan Timur,Regular,2023-12-02
+1480,Intan Firmansyah,intan.firmansyah1480@email.com,Bandung,Jawa Barat,Regular,2024-09-23
+1481,Bambang Wibowo,bambang.wibowo1481@email.com,Yogyakarta,DI Yogyakarta,Regular,2024-06-05
+1482,Fajar Putra,fajar.putra1482@email.com,Palembang,Sumatera Selatan,Regular,2024-05-01
+1483,Eka Santoso,eka.santoso1483@email.com,Bandung,Jawa Barat,Regular,2023-04-23
+1484,Bayu Utami,bayu.utami1484@email.com,Bekasi,Jawa Barat,Member,2024-12-05
+1485,Indah Santoso,indah.santoso1485@email.com,Yogyakarta,DI Yogyakarta,Regular,2024-11-02
+1486,Doni Utami,doni.utami1486@email.com,Yogyakarta,DI Yogyakarta,Regular,2023-02-22
+1487,Lestari Putra,lestari.putra1487@email.com,Depok,Jawa Barat,Regular,2024-09-26
+1488,Citra Anggraini,citra.anggraini1488@email.com,Depok,Jawa Barat,Member,2023-09-06
+1489,Siti Utami,siti.utami1489@email.com,Palembang,Sumatera Selatan,Regular,2023-01-20
+1490,Nina Halim,nina.halim1490@email.com,Semarang,Jawa Tengah,Regular,2024-12-08
+1491,Agus Susanto,agus.susanto1491@email.com,Malang,Jawa Timur,Member,2024-04-27
+1492,Gita Wijaya,gita.wijaya1492@email.com,Palembang,Sumatera Selatan,Regular,2023-08-01
+1493,Fajar Halim,fajar.halim1493@email.com,Medan,Sumatera Utara,Regular,2024-01-21
+1494,Eko Saputra,eko.saputra1494@email.com,Surabaya,Jawa Timur,VIP,2023-12-17
+1495,Fajar Maulana,fajar.maulana1495@email.com,Medan,Sumatera Utara,Member,2024-11-28
+1496,Indah Permata,indah.permata1496@email.com,Yogyakarta,DI Yogyakarta,Regular,2023-09-10
+1497,Joko Setiawan,joko.setiawan1497@email.com,Bekasi,Jawa Barat,Regular,2023-11-01
+1498,Citra Wibowo,citra.wibowo1498@email.com,Palembang,Sumatera Selatan,Regular,2024-12-22
+1499,Hadi Halim,hadi.halim1499@email.com,Surabaya,Jawa Timur,Regular,2023-10-08
+1500,Maya Nugroho,maya.nugroho1500@email.com,Yogyakarta,DI Yogyakarta,Member,2024-01-24

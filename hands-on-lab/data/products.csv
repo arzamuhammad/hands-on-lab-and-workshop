@@ -1,0 +1,31 @@
+product_id,product_name,category,brand,unit_price
+5001,Kopi Bubuk 200g,Makanan & Minuman,NusaCoffee,25000.00
+5002,Teh Celup 25s,Makanan & Minuman,TehSegar,150000.00
+5003,Air Mineral 1.5L,Makanan & Minuman,AquaNusa,20000.00
+5004,Biskuit Cokelat,Makanan & Minuman,RotiKita,125000.00
+5005,Mie Instan Goreng,Makanan & Minuman,MieMantap,125000.00
+5006,Susu UHT 1L,Makanan & Minuman,SapiSehat,10000.00
+5007,Minyak Goreng 2L,Makanan & Minuman,DapurEmas,15000.00
+5008,Gula Pasir 1kg,Makanan & Minuman,ManisRaya,5000.00
+5009,Beras Premium 5kg,Makanan & Minuman,PadiSubur,15000.00
+5010,Kecap Manis 600ml,Makanan & Minuman,RasaNusantara,99000.00
+5011,Sabun Mandi,Perawatan Diri,BersihWangi,7500.00
+5012,Sampo 340ml,Perawatan Diri,RambutIndah,20000.00
+5013,Pasta Gigi,Perawatan Diri,GigiPutih,30000.00
+5014,Sikat Gigi,Perawatan Diri,GigiPutih,75000.00
+5015,Tisu Wajah,Perawatan Diri,LembutCare,15000.00
+5016,Deodoran,Perawatan Diri,FreshDay,99000.00
+5017,Deterjen Bubuk 1kg,Rumah Tangga,CuciBersih,30000.00
+5018,Pembersih Lantai,Rumah Tangga,KilauHome,12500.00
+5019,Sabun Cuci Piring,Rumah Tangga,PiringKinclong,12500.00
+5020,Pengharum Ruangan,Rumah Tangga,WangiRumah,150000.00
+5021,Kantong Sampah,Rumah Tangga,RapiHome,45000.00
+5022,Lampu LED 12W,Elektronik,TerangMax,15000.00
+5023,Powerbank 10000mAh,Elektronik,ChargeGo,45000.00
+5024,Kabel USB-C,Elektronik,ConnectPro,99000.00
+5025,Earphone,Elektronik,SoundNusa,15000.00
+5026,Baterai AA 4pcs,Elektronik,VoltPlus,10000.00
+5027,Kaos Polos,Fashion,GayaKita,7500.00
+5028,Kaos Kaki 3pcs,Fashion,LangkahNyaman,55000.00
+5029,Topi Baseball,Fashion,GayaKita,99000.00
+5030,Sandal Jepit,Fashion,LangkahNyaman,55000.00

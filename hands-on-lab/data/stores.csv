@@ -1,0 +1,16 @@
+store_id,store_name,city,province,region,channel
+10,NusantaraMart Bogor,Bogor,Jawa Barat,Jabodetabek,Offline
+11,NusantaraMart Bekasi,Bekasi,Jawa Barat,Jabodetabek,Offline
+12,NusantaraMart Semarang Online,Semarang,Jawa Tengah,Jawa Tengah,Online
+13,NusantaraMart Bandung,Bandung,Jawa Barat,Jawa Barat,Offline
+14,NusantaraMart Depok Online,Depok,Jawa Barat,Jabodetabek,Online
+15,NusantaraMart Palembang Online,Palembang,Sumatera Selatan,Sumatera,Online
+16,NusantaraMart Surabaya,Surabaya,Jawa Timur,Jawa Timur,Offline
+17,NusantaraMart Makassar,Makassar,Sulawesi Selatan,Sulawesi,Offline
+18,NusantaraMart Yogyakarta Online,Yogyakarta,DI Yogyakarta,Jawa Tengah,Online
+19,NusantaraMart Denpasar,Denpasar,Bali,Bali Nusra,Offline
+20,NusantaraMart Malang,Malang,Jawa Timur,Jawa Timur,Offline
+21,NusantaraMart Medan Online,Medan,Sumatera Utara,Sumatera,Online
+22,NusantaraMart Jakarta,Jakarta,DKI Jakarta,Jabodetabek,Offline
+23,NusantaraMart Balikpapan,Balikpapan,Kalimantan Timur,Kalimantan,Offline
+24,NusantaraMart Tangerang,Tangerang,Banten,Jabodetabek,Offline
