@@ -121,92 +121,85 @@ SELECT COUNT(*) AS remaining FROM customers WHERE customer_id = 9999;  -- expect
 
 -- =====================================================================
 -- MODULE 7 - DATA ENGINEER: build a pipeline (RAW -> ANALYTICS)
---   RAW data -> transform/filter -> data marts -> automate with a Task
+--   RAW data -> transform/filter -> data marts, automated as a Task graph (DAG)
+--   where each step is its OWN task connected by dependencies (AFTER).
 -- =====================================================================
 USE SCHEMA RETAIL_DB.ANALYTICS;
 
--- 7.1  Transform & filter: keep only Completed orders, compute net amount
-CREATE OR REPLACE TABLE sales_clean AS
-SELECT
-    o.order_id,
-    o.order_date,
-    o.store_id,
-    o.customer_id,
-    oi.product_id,
-    oi.quantity,
-    oi.quantity * oi.unit_price * (1 - oi.discount_pct) AS net_amount
-FROM RETAIL_DB.RAW.orders o
-JOIN RETAIL_DB.RAW.order_items oi ON o.order_id = oi.order_id
-WHERE o.status = 'Completed';
+-- 7.1  THE PIPELINE (concept)
+--   A real data engineer does NOT cram everything into one big script.
+--   The work is split into small steps. Each step is its own TASK, and the
+--   tasks run in order using dependencies (AFTER). This is a Task Graph (DAG):
+--
+--      task_build_sales_clean        (root - runs on a schedule)
+--             |
+--             +--> task_mart_daily_sales       (runs AFTER root)
+--             +--> task_mart_category_sales    (runs AFTER root)
+--             +--> task_mart_region_sales      (runs AFTER root)
+--
+--   One SQL statement per task. Clean, easy to debug, easy to extend.
 
--- 7.2  Build data marts (aggregations ready for a dashboard)
-CREATE OR REPLACE TABLE mart_daily_sales AS
-SELECT order_date,
-       COUNT(DISTINCT order_id) AS num_orders,
-       SUM(net_amount)          AS revenue
-FROM sales_clean
-GROUP BY order_date;
-
-CREATE OR REPLACE TABLE mart_category_sales AS
-SELECT p.category,
-       SUM(s.quantity)   AS units_sold,
-       SUM(s.net_amount) AS revenue
-FROM sales_clean s
-JOIN RETAIL_DB.RAW.products p ON s.product_id = p.product_id
-GROUP BY p.category;
-
-CREATE OR REPLACE TABLE mart_region_sales AS
-SELECT st.region, st.city,
-       SUM(s.net_amount) AS revenue
-FROM sales_clean s
-JOIN RETAIL_DB.RAW.stores st ON s.store_id = st.store_id
-GROUP BY st.region, st.city;
-
--- 7.3  Automate the pipeline with a stored procedure + Task
-CREATE OR REPLACE PROCEDURE refresh_marts()
-RETURNS STRING LANGUAGE SQL
-AS
-$$
-BEGIN
-  CREATE OR REPLACE TABLE sales_clean AS
-    SELECT o.order_id, o.order_date, o.store_id, o.customer_id,
-           oi.product_id, oi.quantity,
-           oi.quantity * oi.unit_price * (1 - oi.discount_pct) AS net_amount
-    FROM RETAIL_DB.RAW.orders o
-    JOIN RETAIL_DB.RAW.order_items oi ON o.order_id = oi.order_id
-    WHERE o.status = 'Completed';
-
-  CREATE OR REPLACE TABLE mart_daily_sales AS
-    SELECT order_date, COUNT(DISTINCT order_id) AS num_orders, SUM(net_amount) AS revenue
-    FROM sales_clean GROUP BY order_date;
-
-  CREATE OR REPLACE TABLE mart_category_sales AS
-    SELECT p.category, SUM(s.quantity) AS units_sold, SUM(s.net_amount) AS revenue
-    FROM sales_clean s JOIN RETAIL_DB.RAW.products p ON s.product_id = p.product_id
-    GROUP BY p.category;
-
-  CREATE OR REPLACE TABLE mart_region_sales AS
-    SELECT st.region, st.city, SUM(s.net_amount) AS revenue
-    FROM sales_clean s JOIN RETAIL_DB.RAW.stores st ON s.store_id = st.store_id
-    GROUP BY st.region, st.city;
-
-  RETURN 'Marts refreshed';
-END;
-$$;
-
--- Run the pipeline automatically every day at 01:00 Asia/Jakarta
-CREATE OR REPLACE TASK task_refresh_marts
+-- 7.2  ROOT TASK: transform & filter -> sales_clean. Runs daily at 01:00.
+CREATE OR REPLACE TASK task_build_sales_clean
   WAREHOUSE = LAB_WH
   SCHEDULE  = 'USING CRON 0 1 * * * Asia/Jakarta'
-AS CALL refresh_marts();
+AS
+  CREATE OR REPLACE TABLE sales_clean AS
+  SELECT o.order_id, o.order_date, o.store_id, o.customer_id,
+         oi.product_id, oi.quantity,
+         oi.quantity * oi.unit_price * (1 - oi.discount_pct) AS net_amount
+  FROM RETAIL_DB.RAW.orders o
+  JOIN RETAIL_DB.RAW.order_items oi ON o.order_id = oi.order_id
+  WHERE o.status = 'Completed';
 
--- Tasks are created suspended; enable it:
-ALTER TASK task_refresh_marts RESUME;
+-- 7.3  CHILD TASKS: each builds ONE data mart, AFTER the root finishes.
+--   These three run in parallel once sales_clean is ready.
+CREATE OR REPLACE TASK task_mart_daily_sales
+  WAREHOUSE = LAB_WH
+  AFTER task_build_sales_clean
+AS
+  CREATE OR REPLACE TABLE mart_daily_sales AS
+  SELECT order_date, COUNT(DISTINCT order_id) AS num_orders, SUM(net_amount) AS revenue
+  FROM sales_clean
+  GROUP BY order_date;
 
--- Run it once now (no need to wait for the schedule):
-EXECUTE TASK task_refresh_marts;
+CREATE OR REPLACE TASK task_mart_category_sales
+  WAREHOUSE = LAB_WH
+  AFTER task_build_sales_clean
+AS
+  CREATE OR REPLACE TABLE mart_category_sales AS
+  SELECT p.category, SUM(s.quantity) AS units_sold, SUM(s.net_amount) AS revenue
+  FROM sales_clean s
+  JOIN RETAIL_DB.RAW.products p ON s.product_id = p.product_id
+  GROUP BY p.category;
 
--- Verify the marts
+CREATE OR REPLACE TASK task_mart_region_sales
+  WAREHOUSE = LAB_WH
+  AFTER task_build_sales_clean
+AS
+  CREATE OR REPLACE TABLE mart_region_sales AS
+  SELECT st.region, st.city, SUM(s.net_amount) AS revenue
+  FROM sales_clean s
+  JOIN RETAIL_DB.RAW.stores st ON s.store_id = st.store_id
+  GROUP BY st.region, st.city;
+
+-- 7.4  ACTIVATE the pipeline.
+--   IMPORTANT: resume the CHILD tasks first, then the ROOT task last.
+ALTER TASK task_mart_daily_sales    RESUME;
+ALTER TASK task_mart_category_sales RESUME;
+ALTER TASK task_mart_region_sales   RESUME;
+ALTER TASK task_build_sales_clean   RESUME;
+
+-- 7.5  Run the whole pipeline now (the root automatically triggers the children).
+EXECUTE TASK task_build_sales_clean;
+
+-- Watch the pipeline run (root + 3 children). Re-run this after a few seconds.
+SELECT name, state, scheduled_time, query_start_time, error_code
+FROM TABLE(INFORMATION_SCHEMA.TASK_HISTORY())
+ORDER BY scheduled_time DESC
+LIMIT 10;
+
+-- Once every task shows SUCCEEDED, verify the marts:
 SELECT * FROM mart_daily_sales     ORDER BY order_date LIMIT 10;
 SELECT * FROM mart_category_sales  ORDER BY revenue DESC;
 SELECT * FROM mart_region_sales    ORDER BY revenue DESC;

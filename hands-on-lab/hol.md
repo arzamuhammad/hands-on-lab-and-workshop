@@ -376,91 +376,92 @@ SELECT COUNT(*) AS sisa FROM customers WHERE customer_id = 9999;  -- harus 0
 **Cerita:** *"Sekarang kamu data engineer. Tugasmu membuat alur data otomatis dari data mentah
 menjadi data siap pakai (data mart)."*
 
-**Konsep pipeline:** `RAW (data mentah)` → **Transform/Filter** → `ANALYTICS (data mart)`,
-lalu **diotomasi** dengan **Task** (penjadwal di Snowflake).
+**Konsep pipeline:** data engineer **tidak** menumpuk semua SQL dalam satu prosedur. Pekerjaan
+dipecah jadi langkah-langkah kecil. **Setiap langkah = satu TASK**, dan task-task berjalan
+berurutan lewat **dependency** (`AFTER`). Inilah yang disebut **Task Graph (DAG)**:
 
-### Langkah 7.1 — Transform & Filter (buat tabel bersih)
+```
+task_build_sales_clean        (root — jalan terjadwal)
+       │
+       ├──> task_mart_daily_sales      (jalan AFTER root)
+       ├──> task_mart_category_sales   (jalan AFTER root)
+       └──> task_mart_region_sales     (jalan AFTER root)
+```
+> Satu SQL per task → mudah dibaca, mudah di-debug, mudah ditambah langkah baru.
+
+### Langkah 7.1 — ROOT TASK: transform & filter → `sales_clean` (jadwal harian)
 ```sql
 USE SCHEMA RETAIL_DB.ANALYTICS;
 
--- Ambil hanya pesanan 'Completed' & hitung nilai bersih tiap item
-CREATE OR REPLACE TABLE sales_clean AS
-SELECT
-    o.order_id, o.order_date, o.store_id, o.customer_id,
-    oi.product_id, oi.quantity,
-    oi.quantity * oi.unit_price * (1 - oi.discount_pct) AS net_amount
-FROM RETAIL_DB.RAW.orders o
-JOIN RETAIL_DB.RAW.order_items oi ON o.order_id = oi.order_id
-WHERE o.status = 'Completed';
+CREATE OR REPLACE TASK task_build_sales_clean
+  WAREHOUSE = LAB_WH
+  SCHEDULE  = 'USING CRON 0 1 * * * Asia/Jakarta'
+AS
+  CREATE OR REPLACE TABLE sales_clean AS
+  SELECT o.order_id, o.order_date, o.store_id, o.customer_id,
+         oi.product_id, oi.quantity,
+         oi.quantity * oi.unit_price * (1 - oi.discount_pct) AS net_amount
+  FROM RETAIL_DB.RAW.orders o
+  JOIN RETAIL_DB.RAW.order_items oi ON o.order_id = oi.order_id
+  WHERE o.status = 'Completed';
 ```
 
-### Langkah 7.2 — Bangun Data Mart (agregasi siap dashboard)
+### Langkah 7.2 — CHILD TASKS: tiap task membangun 1 data mart (`AFTER` root)
 ```sql
 -- Data mart 1: penjualan harian
-CREATE OR REPLACE TABLE mart_daily_sales AS
-SELECT order_date,
-       COUNT(DISTINCT order_id) AS jumlah_order,
-       SUM(net_amount)          AS omzet
-FROM sales_clean
-GROUP BY order_date;
+CREATE OR REPLACE TASK task_mart_daily_sales
+  WAREHOUSE = LAB_WH
+  AFTER task_build_sales_clean
+AS
+  CREATE OR REPLACE TABLE mart_daily_sales AS
+  SELECT order_date, COUNT(DISTINCT order_id) AS jumlah_order, SUM(net_amount) AS omzet
+  FROM sales_clean
+  GROUP BY order_date;
 
 -- Data mart 2: penjualan per kategori
-CREATE OR REPLACE TABLE mart_category_sales AS
-SELECT p.category,
-       SUM(s.quantity)   AS unit_terjual,
-       SUM(s.net_amount) AS omzet
-FROM sales_clean s
-JOIN RETAIL_DB.RAW.products p ON s.product_id = p.product_id
-GROUP BY p.category;
+CREATE OR REPLACE TASK task_mart_category_sales
+  WAREHOUSE = LAB_WH
+  AFTER task_build_sales_clean
+AS
+  CREATE OR REPLACE TABLE mart_category_sales AS
+  SELECT p.category, SUM(s.quantity) AS unit_terjual, SUM(s.net_amount) AS omzet
+  FROM sales_clean s
+  JOIN RETAIL_DB.RAW.products p ON s.product_id = p.product_id
+  GROUP BY p.category;
 
 -- Data mart 3: penjualan per wilayah
-CREATE OR REPLACE TABLE mart_region_sales AS
-SELECT st.region, st.city,
-       SUM(s.net_amount) AS omzet
-FROM sales_clean s
-JOIN RETAIL_DB.RAW.stores st ON s.store_id = st.store_id
-GROUP BY st.region, st.city;
-```
-
-### Langkah 7.3 — Otomasi dengan TASK (jadwalkan harian)
-```sql
--- Bungkus transformasi jadi prosedur sederhana
-CREATE OR REPLACE PROCEDURE refresh_marts()
-RETURNS STRING LANGUAGE SQL
-AS
-$$
-BEGIN
-  CREATE OR REPLACE TABLE sales_clean AS
-    SELECT o.order_id, o.order_date, o.store_id, o.customer_id,
-           oi.product_id, oi.quantity,
-           oi.quantity * oi.unit_price * (1 - oi.discount_pct) AS net_amount
-    FROM RETAIL_DB.RAW.orders o
-    JOIN RETAIL_DB.RAW.order_items oi ON o.order_id = oi.order_id
-    WHERE o.status = 'Completed';
-
-  CREATE OR REPLACE TABLE mart_daily_sales AS
-    SELECT order_date, COUNT(DISTINCT order_id) AS jumlah_order, SUM(net_amount) AS omzet
-    FROM sales_clean GROUP BY order_date;
-
-  RETURN 'Marts refreshed';
-END;
-$$;
-
--- Task: jalankan otomatis tiap hari jam 1 pagi
-CREATE OR REPLACE TASK task_refresh_marts
+CREATE OR REPLACE TASK task_mart_region_sales
   WAREHOUSE = LAB_WH
-  SCHEDULE = 'USING CRON 0 1 * * * Asia/Jakarta'
-AS CALL refresh_marts();
-
--- Task dibuat dalam keadaan SUSPENDED; aktifkan:
-ALTER TASK task_refresh_marts RESUME;
-
--- Coba jalankan manual sekarang (tanpa nunggu jadwal):
-EXECUTE TASK task_refresh_marts;
+  AFTER task_build_sales_clean
+AS
+  CREATE OR REPLACE TABLE mart_region_sales AS
+  SELECT st.region, st.city, SUM(s.net_amount) AS omzet
+  FROM sales_clean s
+  JOIN RETAIL_DB.RAW.stores st ON s.store_id = st.store_id
+  GROUP BY st.region, st.city;
 ```
 
-**Konsep yang ditanam:** inilah inti pekerjaan **data engineer** — bikin data mentah jadi data
-rapi & otomatis. Dashboard nanti tinggal baca dari data mart ini.
+### Langkah 7.3 — Aktifkan pipeline & jalankan
+```sql
+-- PENTING: resume CHILD dulu, baru ROOT paling akhir
+ALTER TASK task_mart_daily_sales    RESUME;
+ALTER TASK task_mart_category_sales RESUME;
+ALTER TASK task_mart_region_sales   RESUME;
+ALTER TASK task_build_sales_clean   RESUME;
+
+-- Jalankan seluruh pipeline sekarang (root otomatis memicu child)
+EXECUTE TASK task_build_sales_clean;
+
+-- Pantau jalannya pipeline (refresh setelah beberapa detik)
+SELECT name, state, scheduled_time, error_code
+FROM TABLE(INFORMATION_SCHEMA.TASK_HISTORY())
+ORDER BY scheduled_time DESC
+LIMIT 10;
+```
+
+**Konsep yang ditanam:** inilah inti pekerjaan **data engineer** — memecah alur jadi langkah-langkah
+yang saling bergantung (DAG), satu SQL per task, lalu menjalankannya otomatis. Dashboard nanti
+tinggal baca dari data mart ini.
 
 ---
 
@@ -494,7 +495,11 @@ manajemen bisa lihat performa bisnis."*
 - Langkah lanjut: latihan SQL mandiri, ikuti quickstart lain, eksplor trial sampai 30 hari.
 - Bersihkan resource (opsional, hemat kredit):
 ```sql
-ALTER TASK task_refresh_marts SUSPEND;
+-- Suspend ROOT dulu agar child tidak terpicu, lalu child
+ALTER TASK task_build_sales_clean   SUSPEND;
+ALTER TASK task_mart_daily_sales    SUSPEND;
+ALTER TASK task_mart_category_sales SUSPEND;
+ALTER TASK task_mart_region_sales   SUSPEND;
 ALTER WAREHOUSE LAB_WH SUSPEND;
 -- DROP DATABASE RETAIL_DB;  -- kalau ingin hapus total
 ```

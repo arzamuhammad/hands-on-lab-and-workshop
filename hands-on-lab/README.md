@@ -131,7 +131,7 @@ Use **Data ▸ Load Data** in Snowsight to drag-and-drop each CSV into its table
 | 4. JOIN | combine tables | "Which product category sells the most?" |
 | 5. DML | `INSERT/UPDATE/DELETE` | "A new customer signs up / upgrades / leaves" |
 | 6. Mini-Challenge | everything above | 5 case-study questions |
-| 7. Data Engineer | transform + Task | "Turn raw data into automated data marts" |
+| 7. Data Engineer | pipeline of dependent Tasks (DAG) | "Turn raw data into automated data marts" |
 | 8. BI Developer | Streamlit | "Show the business its sales dashboard" |
 
 ---
@@ -150,7 +150,10 @@ Use **Data ▸ Load Data** in Snowsight to drag-and-drop each CSV into its table
 ## Cleanup (optional — save credits)
 
 ```sql
-ALTER TASK RETAIL_DB.ANALYTICS.task_refresh_marts SUSPEND;
+ALTER TASK RETAIL_DB.ANALYTICS.task_build_sales_clean   SUSPEND;
+ALTER TASK RETAIL_DB.ANALYTICS.task_mart_daily_sales    SUSPEND;
+ALTER TASK RETAIL_DB.ANALYTICS.task_mart_category_sales SUSPEND;
+ALTER TASK RETAIL_DB.ANALYTICS.task_mart_region_sales   SUSPEND;
 ALTER WAREHOUSE LAB_WH SUSPEND;
 -- DROP DATABASE RETAIL_DB;   -- remove everything
 ```
