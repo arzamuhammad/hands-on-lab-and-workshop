@@ -142,7 +142,8 @@ Istilahnya terdengar teknis, tapi konsepnya sederhana. Akan saya jelaskan pelan-
 > mana. Dan ini bocoran penting: profesi-profesi data yang akan kita bahas sebentar lagi, sebagian
 > besar hidup di dunia OLAP."
 **Poin kunci:** OLTP menjalankan bisnis; OLAP menumbuhkan bisnis.
-👉 **Sisipkan kuis interaktif (Kahoot/Mentimeter) di sini** — 2-3 soal recap Bagian 1 & 2.
+👉 **Slide QUIZ 1 muncul setelah ini** (Databases & OLTP/OLAP) — lihat Kunci Jawaban di bawah.
+   Tips: jalankan paralel di Kahoot/Mentimeter agar interaktif.
 **Transisi:** "Sekarang, bagaimana perusahaan dulu melakukan analitik sebelum ada cloud? Mari kita mesin waktu."
 
 ---
@@ -224,7 +225,7 @@ kalian akan paham kenapa dunia data meledak beberapa tahun terakhir."
 > "Tiga istilah yang sering muncul. DATA WAREHOUSE — gudang data rapi & terstruktur untuk analitik.
 > DATA LAKE — danau data: menampung data mentah jenis apa pun, murah. LAKEHOUSE — gabungan keduanya
 > dalam satu platform. Tidak perlu hafal sekarang; cukup supaya nanti tidak asing saat mendengarnya."
-👉 **Sisipkan kuis interaktif kedua di sini** (recap on-prem vs cloud).
+👉 **Slide QUIZ 2 muncul setelah Bagian Karier** (Cloud & Careers) — lihat Kunci Jawaban di bawah.
 **Transisi:** "Oke, sekarang bagian yang paling kalian tunggu: peluang karier."
 
 ---
@@ -353,3 +354,24 @@ kalian akan paham kenapa dunia data meledak beberapa tahun terakhir."
 - **Kalau waktu mepet**, slide yang aman dipangkas: 14, 17, 18 (analogi & kosakata).
 - **Tetap netral vendor**: bahas konsep/kategori, hindari menyebut/menjual produk tertentu.
 - **Bahasa tubuh**: banyak gerak, kontak mata, dan ANALOGI > definisi.
+
+---
+
+## 🎯 KUNCI JAWABAN QUIZ (untuk pemateri)
+
+Ada 3 slide quiz pilihan ganda, muncul setiap selesai 2 section. Setiap quiz = 2 soal.
+Cara pakai: tampilkan slide, beri ~30 detik, minta angkat tangan / jawab di Kahoot, baru ungkap jawaban.
+
+**QUIZ 1 — Databases & OLTP/OLAP** (setelah Part 1 & 2)
+- Q1: **B. A super-organized digital filing cabinet** — database = lemari arsip digital rapi.
+- Q2: **C. OLTP** — bayar di kasir = transaksi cepat & real-time.
+
+**QUIZ 2 — Cloud & Data Careers** (setelah Part 3 & 4)
+- Q1: **B. Storage and compute scale independently** — keunggulan inti cloud.
+- Q2: **C. Data Engineer** — yang membangun pipeline agar data mengalir bersih.
+
+**QUIZ 3 — Meet SQL** (setelah Part 5)
+- Q1: **B. Ask questions to a database** — SQL = bahasa untuk bertanya ke data.
+- Q2: **C. SELECT** — keyword untuk mengambil/membaca data.
+
+> Catatan: jawaban sengaja TIDAK ditulis di slide agar jadi quiz sungguhan. Ungkap lisan setelah audiens menebak.

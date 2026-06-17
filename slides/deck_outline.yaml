@@ -86,6 +86,22 @@ slides:
       - "OLAP helps the business decide what to do next"
       - "The world of data analytics lives in OLAP — your future playground"
 
+  - type: two_column
+    title: "QUIZ 1 — Databases & OLTP vs OLAP"
+    columns:
+      - title: "Q1. A database is best described as:"
+        bullets:
+          - "A. A type of website"
+          - "B. A super-organized digital filing cabinet"
+          - "C. A programming language"
+          - "D. A social media app"
+      - title: "Q2. Tapping 'Pay' at checkout is an example of:"
+        bullets:
+          - "A. OLAP"
+          - "B. A data lake"
+          - "C. OLTP"
+          - "D. A dashboard"
+
   - type: section
     title: "PART 3 — THEN vs NOW"
 
@@ -215,6 +231,22 @@ slides:
           - "Build small projects"
           - "Today's lab is your first step!"
 
+  - type: two_column
+    title: "QUIZ 2 — Cloud & Data Careers"
+    columns:
+      - title: "Q1. A key advantage of cloud over on-premise:"
+        bullets:
+          - "A. You must buy servers upfront"
+          - "B. Storage and compute scale independently"
+          - "C. Capacity is fixed forever"
+          - "D. Scaling takes months"
+      - title: "Q2. Who builds pipelines so data flows cleanly?"
+        bullets:
+          - "A. Data Analyst"
+          - "B. Data Scientist"
+          - "C. Data Engineer"
+          - "D. Data Architect"
+
   - type: section
     title: "PART 5 — MEET SQL"
 
@@ -231,6 +263,22 @@ slides:
       - "SELECT name FROM students WHERE major = 'IT';"
       - "Instantly returns every IT student — from thousands of rows"
       - "In the lab, you'll write queries just like this"
+
+  - type: two_column
+    title: "QUIZ 3 — Meet SQL"
+    columns:
+      - title: "Q1. What does SQL let you do?"
+        bullets:
+          - "A. Edit videos"
+          - "B. Ask questions to a database"
+          - "C. Design logos"
+          - "D. Send emails"
+      - title: "Q2. Which keyword retrieves data?"
+        bullets:
+          - "A. DELETE"
+          - "B. UPDATE"
+          - "C. SELECT"
+          - "D. INSERT"
 
   - type: quote
     text: "Today you will become an analyst, a data engineer, and a dashboard builder."
