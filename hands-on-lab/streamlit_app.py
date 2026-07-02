@@ -29,8 +29,8 @@ def run(sql: str) -> pd.DataFrame:
 
 # ---------------------------------------------------------------- KPIs
 daily = run("SELECT * FROM RETAIL_DB.ANALYTICS.mart_daily_sales ORDER BY order_date")
-total_revenue = float(daily["REVENUE"].sum())
-total_orders = int(daily["NUM_ORDERS"].sum())
+total_revenue = float(daily["OMZET"].sum())
+total_orders = int(daily["JUMLAH_ORDER"].sum())
 aov = total_revenue / total_orders if total_orders else 0
 
 c1, c2, c3 = st.columns(3)
@@ -44,7 +44,7 @@ st.divider()
 st.subheader("📈 Daily Revenue")
 daily_idx = daily.copy()
 daily_idx["ORDER_DATE"] = pd.to_datetime(daily_idx["ORDER_DATE"])
-st.line_chart(daily_idx, x="ORDER_DATE", y="REVENUE")
+st.line_chart(daily_idx, x="ORDER_DATE", y="OMZET")
 
 # -------------------------------------------------- Category & Region
 left, right = st.columns(2)
@@ -52,30 +52,30 @@ left, right = st.columns(2)
 with left:
     st.subheader("🏷️ Revenue by Category")
     cat = run("""
-        SELECT category, revenue
+        SELECT category, omzet
         FROM RETAIL_DB.ANALYTICS.mart_category_sales
-        ORDER BY revenue DESC
+        ORDER BY omzet DESC
     """)
-    st.bar_chart(cat, x="CATEGORY", y="REVENUE")
+    st.bar_chart(cat, x="CATEGORY", y="OMZET")
 
 with right:
     st.subheader("📍 Revenue by Region")
     region = run("""
-        SELECT region, SUM(revenue) AS revenue
+        SELECT region, SUM(omzet) AS OMZET
         FROM RETAIL_DB.ANALYTICS.mart_region_sales
         GROUP BY region
-        ORDER BY revenue DESC
+        ORDER BY OMZET DESC
     """)
-    st.bar_chart(region, x="REGION", y="REVENUE")
+    st.bar_chart(region, x="REGION", y="OMZET")
 
 # ------------------------------------------------------ Detail tables
 with st.expander("🔎 See detail tables"):
     st.write("**Top cities by revenue**")
     st.dataframe(
         run("""
-            SELECT region, city, revenue
+            SELECT region, city, omzet
             FROM RETAIL_DB.ANALYTICS.mart_region_sales
-            ORDER BY revenue DESC
+            ORDER BY omzet DESC
             LIMIT 10
         """),
         use_container_width=True,
